@@ -11,7 +11,6 @@ David Klein (<dklein@pik-potsdam.de>)
     + [Activate snapshot for REMIND and MAgPIE](#activate-snapshot-for-remind-and-magpie)
     + [Configure start_bundle_coupled.R](#configure-start-bundle-coupledr)
     + [Configure the scenario_config_coupled.csv of your choice](#configure-the-scenario-config-coupledcsv-of-your-choice)
-    + [Use the latest GAMS version](#use-the-latest-gams-version)
     + [Perform test start before actually submitting runs](#perform-test-start-before-actually-submitting-runs)
     + [After checking that coupling scripts finds all gdxes and mifs start runs](#after-checking-that-coupling-scripts-finds-all-gdxes-and-mifs-start-runs)
 - [Technical concept](#technical-concept)
@@ -66,14 +65,6 @@ See comments in the head section of the file. Most importantly you need to provi
 
 By default these are (A) `scenario_config_coupled_SSPSDP.csv` and (B) `scenario_config_SSPSDP.csv`. A provides some extra information
 for coupled runs (e.g. which run should be started). All other settings are taken from B. Thus every scenario in A must also be present in B.
-
-### Use the latest GAMS version
-
-This step is optional. If you want to use the latest GAMS version type this into the same command line you will start the runs from:
-
-```bash
-module load gams/30.2.0
-```
 
 ### Perform test start before actually submitting runs
 
